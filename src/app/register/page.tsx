@@ -33,7 +33,7 @@ export default function RegisterPage() {
       // Registro exitoso → redirigimos a /login
       router.push('/login');
     } catch (err) {
-      setError('Error de conexión con el servidor');
+      setError('Error de conexión con el servidor: ' + err);
     }
   };
 

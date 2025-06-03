@@ -7,7 +7,7 @@ import LogoutButton from './LogoutButton';
 import { getTokenFromCookie, decodePayload } from '@/app/lib/jwt';
 
 export default function Header() {
-  const router = useRouter();
+  useRouter();
   const [isClient, setIsClient] = useState(false);
   const [isNormalUser, setIsNormalUser] = useState(false);
 

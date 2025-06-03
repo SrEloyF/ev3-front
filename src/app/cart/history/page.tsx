@@ -226,7 +226,7 @@ export default function CartHistoryPage() {
           /* Purchase History */
           <div className="row">
             <div className="col-12">
-              {history.map((cart, index) => {
+              {history.map((cart) => {
                 const total = calculateTotal(cart.items);
                 const { date, time } = formatDate(cart.updatedAt);
                 const isExpanded = expandedCarts[cart.id];

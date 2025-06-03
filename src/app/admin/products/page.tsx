@@ -46,7 +46,7 @@ export default function AdminProductsPage() {
         console.error('Error al listar productos:', data.message);
       }
     } catch (err) {
-      console.error('Error de conexión al listar productos');
+      console.error('Error de conexión al listar productos' + err);
     } finally {
       setLoading(false);
     }
